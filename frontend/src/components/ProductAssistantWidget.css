@@ -1,0 +1,175 @@
+/* Scoped with a "paw-" prefix so this can be dropped into any host page. */
+
+.paw-root {
+  position: fixed;
+  bottom: 24px;
+  z-index: 2147483000;
+  font-family: Inter, system-ui, sans-serif;
+  color: #18202f;
+}
+
+.paw-root * {
+  box-sizing: border-box;
+}
+
+.paw-bottom-right {
+  right: 24px;
+}
+
+.paw-bottom-left {
+  left: 24px;
+}
+
+.paw-launcher {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  background: #111827;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.28);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  display: grid;
+  place-items: center;
+  float: right;
+}
+
+.paw-launcher img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.paw-launcher:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.34);
+}
+
+.paw-panel {
+  width: min(340px, calc(100vw - 48px));
+  max-height: min(560px, calc(100vh - 140px));
+  overflow-y: auto;
+  background: #fff;
+  border: 1px solid #e2e6ed;
+  border-radius: 10px;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.18);
+  margin-bottom: 12px;
+  padding: 16px;
+}
+
+.paw-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.paw-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  object-fit: contain;
+  background: #111827;
+}
+
+.paw-header-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+}
+
+.paw-header-text span {
+  font-size: 11px;
+  color: #8a94a5;
+}
+
+.paw-close {
+  border: none;
+  background: none;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  color: #8a94a5;
+}
+
+.paw-form label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  margin: 10px 0 6px;
+  color: #4b5565;
+}
+
+.paw-form textarea,
+.paw-form select {
+  width: 100%;
+  border: 1px solid #d9dee8;
+  border-radius: 6px;
+  background: #fff;
+  padding: 10px 11px;
+  font: inherit;
+  outline: none;
+}
+
+.paw-form textarea {
+  min-height: 64px;
+  resize: vertical;
+}
+
+.paw-generate {
+  width: 100%;
+  margin-top: 14px;
+  border: 0;
+  background: #111827;
+  color: #fff;
+  border-radius: 6px;
+  padding: 11px 14px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.paw-generate:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.paw-error {
+  margin-top: 10px;
+  padding: 10px 11px;
+  border-radius: 6px;
+  background: #fdecec;
+  color: #b3261e;
+  font-size: 12px;
+}
+
+.paw-result {
+  margin-top: 14px;
+  padding: 12px;
+  background: #f7f8fa;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.paw-result-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 4px 0;
+}
+
+.paw-result-row span {
+  color: #8a94a5;
+}
+
+.paw-result-row strong {
+  text-align: right;
+}
+
+.paw-result-note {
+  margin: 8px 0 0;
+  font-size: 11px;
+  color: #4b8f5c;
+}

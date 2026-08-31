@@ -1,0 +1,12 @@
+.rich-editor{border:1px solid rgba(73,116,178,.34);border-radius: 7px;overflow:hidden;background:#fff;box-shadow:0 10px 30px rgba(0,0,0,.12)}
+.rich-toolbar{display:flex;align-items:center;gap:4px;min-height:46px;padding:7px 10px;border-bottom:1px solid rgba(73,116,178,.24);background:linear-gradient(180deg,#0c203b,#091a31);color:#dbe8ff}
+.rich-toolbar .toolbar-label{margin-right:6px;font-size:10px;font-weight:800;letter-spacing:.12em;color:#7f9bc0}
+.toolbar-select,.toolbar-button{height:32px;border:1px solid transparent;background:transparent;color:#dce9fb;border-radius: 4px;font:inherit;cursor:pointer}
+.toolbar-select{padding:0 9px;min-width:108px}
+.toolbar-select:hover,.toolbar-button:hover{background:rgba(40,123,255,.14);border-color:rgba(71,151,255,.24)}
+.toolbar-button{padding:0 9px;min-width:34px;font-weight:700}
+.toolbar-button.bold{font-weight:900}.toolbar-button.italic{font-style:italic}.toolbar-button.underline{text-decoration:underline}.toolbar-button.list{font-weight:600}.toolbar-divider{width:1px;height:22px;background:rgba(117,151,194,.28);margin:0 3px}
+.rich-editor-surface{min-height:280px;max-height:55vh;padding:18px 18px 22px;color:#1f2937;background:#fff;font-size:15px;line-height:1.7;outline:none;overflow-y:auto;white-space:normal}
+.rich-editor-surface:empty:before{content:attr(data-placeholder);color:#94a3b8;pointer-events:none}
+.rich-editor-surface p{margin:0 0 12px}.rich-editor-surface h1,.rich-editor-surface h2,.rich-editor-surface h3{line-height:1.25;margin:0 0 12px;color:#1f2937}.rich-editor-surface h1{font-size:28px}.rich-editor-surface h2{font-size:23px}.rich-editor-surface h3{font-size:19px}.rich-editor-surface ul{padding-left:25px;margin:0 0 12px}.rich-editor-surface a{color:#48b7ff;text-decoration:underline}.editor-footer{display:flex;justify-content:space-between;gap:12px;padding:9px 14px;border-top:1px solid rgba(73,116,178,.22);font-size:11px;color:#64748b;background:#fff}
+@media(max-width:700px){.rich-toolbar{flex-wrap:wrap}.toolbar-divider{display:none}.rich-editor-surface{min-height:230px}.editor-footer{font-size:10px}}

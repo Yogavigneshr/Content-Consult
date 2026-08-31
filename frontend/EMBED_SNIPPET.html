@@ -1,0 +1,25 @@
+<!-- Niftybot universal content-generation embed -->
+<script>
+  window.NIFTYBOT_CONFIG = {
+    apiBaseUrl: "https://your-api.example.com/api/v1",
+    siteId: YOUR_SITE_ID,
+    apiKey: "YOUR_SITE_API_KEY",
+
+    // Choose what this page edits:
+    // product | blog | landing_page | social_post | email |
+    // ad_copy | newsletter | press_release
+    contentType: "blog",
+
+    // Optional: automatically apply generated values to fields on the host page.
+    targetTitleSelector: "#content-title",
+    targetSelector: "#content-body",
+    targetCategorySelector: "#content-category",
+    targetPriceSelector: "#content-price",
+    targetSeoSelector: "#seo-description",
+
+    // Optional page/context controls:
+    contextSelector: "#main-content",
+    position: "bottom-right"
+  };
+</script>
+<script src="https://your-cdn.example.com/embed.js" defer></script>
