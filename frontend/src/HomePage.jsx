@@ -59,6 +59,27 @@ const services = [
   },
 ];
 
+<div style="max-width:420px;border:1px solid #d9d9d9;border-radius:10px;padding:28px 24px;background:#fff;box-shadow:0 6px 18px rgba(0,0,0,0.06);font-family:Georgia,'Times New Roman',serif;">
+  <h3 style='margin:0 0 14px 0;font-size:24px;color:#1f1f1f;line-height:1.25;'>
+    Content Consulting Services
+  </h3>
+  <p style='margin:0 0 16px 0;font-size:15px;color:#4a4a4a;line-height:1.6;'>
+    Strategic content solutions designed to strengthen brand voice, improve
+    audience engagement, and drive measurable business outcomes.
+  </p>
+  <ul style='margin:0 0 18px 18px;padding:0;color:#2f2f2f;font-size:15px;line-height:1.7;'>
+    <li>Content Strategy & Planning</li>
+    <li>Editorial Calendar Development</li>
+    <li>SEO-Focused Content Guidance</li>
+    <li>Brand Voice & Messaging Refinement</li>
+  </ul>
+  <a
+    href='#contact'
+    style='display:inline-block;text-decoration:none;background:#1f1f1f;color:#fff;padding:10px 18px;border-radius:6px;font-size:14px;letter-spacing:.2px;'
+  >
+    Book a Consultation
+  </a>
+</div>;
 export default function HomePage() {
   const user = getStoredUser();
   const [activeSection, setActiveSection] = useState('home');

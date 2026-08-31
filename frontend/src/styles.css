@@ -14492,3 +14492,160 @@ td small {
 .metric-card img {
   display: none !important;
 }
+/* Only the service card inside the hero */
+.content-hero-dark .service-showcase {
+  border-radius: 0px !important; /* change this number as needed */
+}
+/* =========================================================
+   CONTENT CONSULT — FINAL MOBILE WORKSPACE FIX
+   Keep this at the VERY END of the stylesheet.
+   ========================================================= */
+
+@media screen and (max-width: 768px) {
+  html,
+  body,
+  #root {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+  }
+
+  .studio {
+    width: 100% !important;
+    min-width: 0 !important;
+    overflow-x: hidden !important;
+  }
+
+  .studio-shell {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+
+    width: calc(100% - 24px) !important;
+    max-width: none !important;
+    min-width: 0 !important;
+
+    margin: 16px 12px 24px !important;
+    gap: 14px !important;
+  }
+
+  /* LEFT CONTENT-TYPE PANEL */
+  .type-nav {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    min-height: auto !important;
+    max-height: none !important;
+
+    position: static !important;
+    overflow: visible !important;
+
+    box-sizing: border-box !important;
+  }
+
+  .type-nav nav {
+    width: 100% !important;
+    min-width: 0 !important;
+
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 8px !important;
+  }
+
+  .type-nav button {
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  /* MAIN EDITOR */
+  .editor-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    box-sizing: border-box !important;
+
+    padding: 18px !important;
+  }
+
+  .editor-card * {
+    max-width: 100%;
+  }
+
+  .editor-topline {
+    width: 100% !important;
+    min-width: 0 !important;
+    flex-direction: column !important;
+  }
+
+  .editor-topline h1 {
+    max-width: 100% !important;
+    font-size: 25px !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  .editor-topline-actions {
+    width: 100% !important;
+  }
+
+  /* INPUTS */
+  .editor-card input,
+  .editor-card textarea,
+  .editor-card select {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  /* TWO-COLUMN FORM FIELDS */
+  .two-fields,
+  .content-fields {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  /* MOBILE QUICK START */
+  .quick-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+/* SMALL PHONES */
+@media screen and (max-width: 480px) {
+  .studio-shell {
+    width: calc(100% - 20px) !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+
+  .type-nav {
+    padding: 14px !important;
+  }
+
+  .type-nav nav {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .type-nav button {
+    min-height: 58px !important;
+    padding: 8px !important;
+  }
+
+  .nav-copy strong {
+    font-size: 12px !important;
+  }
+
+  .nav-copy small {
+    font-size: 9px !important;
+  }
+
+  .editor-card {
+    padding: 14px !important;
+  }
+
+  .quick-grid {
+    grid-template-columns: 1fr !important;
+  }
+}

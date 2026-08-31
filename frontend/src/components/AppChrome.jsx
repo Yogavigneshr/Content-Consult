@@ -5,7 +5,12 @@ import './AppChrome.css';
 // Shared site header used on every page.
 // Shows the logo/brand on the left, optional nav links in the middle,
 // and a circular avatar button on the right that opens a dropdown nav menu.
-export function AppHeader({ admin = false, nav = null, activeHref = null, hideLogin = false }) {
+export function AppHeader({
+  admin = false,
+  nav = null,
+  activeHref = null,
+  hideLogin = false,
+}) {
   const user = getStoredUser();
   const showAdmin = Boolean(user?.is_staff) || admin;
   const [open, setOpen] = useState(false);
@@ -100,16 +105,18 @@ export function AppHeader({ admin = false, nav = null, activeHref = null, hideLo
                 <div className='app-dropdown-divider' />
 
                 <button
-                  className={`app-dropdown-item${currentPath === '/workspace' ? ' app-dropdown-active' : ''
-                    }`}
+                  className={`app-dropdown-item${
+                    currentPath === '/workspace' ? ' app-dropdown-active' : ''
+                  }`}
                   onClick={() => go('/workspace')}
                 >
                   Workspace
                 </button>
 
                 <button
-                  className={`app-dropdown-item${currentPath === '/drafts' ? ' app-dropdown-active' : ''
-                    }`}
+                  className={`app-dropdown-item${
+                    currentPath === '/drafts' ? ' app-dropdown-active' : ''
+                  }`}
                   onClick={() => go('/drafts')}
                 >
                   Drafts
@@ -117,10 +124,11 @@ export function AppHeader({ admin = false, nav = null, activeHref = null, hideLo
 
                 {showAdmin && (
                   <button
-                    className={`app-dropdown-item${currentPath.startsWith('/admin')
-                      ? ' app-dropdown-active'
-                      : ''
-                      }`}
+                    className={`app-dropdown-item${
+                      currentPath.startsWith('/admin')
+                        ? ' app-dropdown-active'
+                        : ''
+                    }`}
                     onClick={() => go('/admin')}
                   >
                     Admin panel
@@ -196,7 +204,7 @@ export function AppFooter() {
           </a>
         </nav>
         <div className='app-footer-meta'>
-          <span>© Copyright 2023 Lead SEO Marketing Private Limited</span>
+          <span>© Copyright 2026 Lead SEO Marketing Private Limited</span>
           <span>Built for clear, consistent content</span>
         </div>
       </div>
@@ -213,7 +221,7 @@ export function PublicFooter() {
           <span>
             AI-assisted content workspace for a faster, clearer workflow.
           </span>
-          <small>© Copyright 2023 Lead SEO Marketing Private Limited</small>
+          <small>© Copyright 2026 Lead SEO Marketing Private Limited</small>
         </div>
         <div className='public-footer-column'>
           <span>PRODUCT</span>
